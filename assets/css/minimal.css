@@ -1,119 +1,147 @@
-/* ===== TIPOGRAFÍAS ===== */
+/* ------------------------------
+   TIPOGRAFÍAS
+------------------------------ */
 body {
+    font-family: 'Marcellus', serif;
     margin: 0;
     padding: 0;
-    font-family: 'Marcellus', serif;
-    color: #222;
-    background: #fafafa;
-}
-
-/* ===== NAVBAR ===== */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 18px 35px;
-    background: white;
-    border-bottom: 1px solid #ddd;
-}
-
-.navbar a {
+    background-color: #ffffff;
     color: #333;
-    text-decoration: none;
-    font-size: 17px;
+    line-height: 1.6;
 }
 
-.navbar a:hover,
-.navbar a.active {
+/* Título del sitio */
+header h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
     color: #8D4925;
-}
-
-/* ===== HERO ===== */
-.hero {
-    width: 100%;
-    height: 55vh;
-    position: relative;
-}
-
-.hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.hero-text {
-    position: absolute;
-    bottom: 40px;
-    left: 40px;
-    background: rgba(255,255,255,0.85);
-    padding: 15px 25px;
-    border-radius: 12px;
-}
-
-.hero-text h1 {
-    font-size: 40px;
     margin: 0;
-}
-
-.hero-text p {
-    font-size: 18px;
-}
-
-/* ===== BIENVENIDA ===== */
-.bienvenida {
     text-align: center;
-    padding: 50px 20px;
+    padding: 20px 0;
 }
 
-/* ===== SERVICIOS ===== */
-.servicios-home {
+/* Subtítulos */
+h2, h3 {
+    font-family: 'Marcellus', serif;
+    color: #8D4925;
+    margin-bottom: 10px;
+}
+
+/* ------------------------------
+   HEADER
+------------------------------ */
+header {
+    padding: 10px 20px;
+    border-bottom: 2px solid #FFB48A;
+}
+
+/* ------------------------------
+   NAVBAR
+------------------------------ */
+nav {
     display: flex;
-    gap: 30px;
     justify-content: center;
-    flex-wrap: wrap;
-    padding: 50px 20px;
-}
-
-.servicio {
-    background: white;
-    border-radius: 15px;
-    padding: 20px;
-    max-width: 300px;
-    box-shadow: 0px 5px 20px rgba(0,0,0,0.07);
-}
-
-.servicio img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-/* BUTTON */
-.button {
-    display: inline-block;
-    padding: 8px 18px;
-    background: #8D4925;
-    color: white;
-    border-radius: 8px;
+    gap: 25px;
     margin-top: 10px;
+}
+
+nav a {
     text-decoration: none;
+    font-size: 1.1rem;
+    color: #8D4925;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
 }
 
-/* VIDEO */
-.video {
-    padding: 50px 20px;
-    text-align: center;
+nav a:hover {
+    border-bottom: 2px solid #FFB48A;
 }
 
-/* MAPA */
-.mapa {
-    padding: 40px 20px;
+/* ------------------------------
+   CONTENIDO PRINCIPAL
+------------------------------ */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
-/* ===== FOOTER ===== */
+/* ------------------------------
+   BOTONES (si los usás)
+------------------------------ */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #FFB48A;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: #8D4925;
+}
+
+/* ------------------------------
+   TARJETAS / BLOQUES
+------------------------------ */
+.card {
+    border: 1px solid #FFB48A;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 25px;
+    background-color: #fff;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
 footer {
-    padding: 40px 20px;
+    margin-top: 50px;
     text-align: center;
-    background: white;
-    border-top: 1px solid #ddd;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #8D4925;
+    border-top: 2px solid #FFB48A;
 }
 
+/* ------------------------------
+   GALERÍAS
+------------------------------ */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #FFB48A;
+    transition: transform 0.2s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.02);
+}
+
+/* ------------------------------
+   RESPONSIVE
+------------------------------ */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2.4rem;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
