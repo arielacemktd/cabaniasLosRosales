@@ -1,1 +1,179 @@
+/* ===== TIPOGRAFÍAS ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Marcellus', serif;
+    color: #333;
+    background: #fff;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #8D4925; /* marrón */
+    color: #fff;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    border-bottom: 2px solid #FFB48A;
+}
+
+.btn-wapp {
+    background: #FFB48A;
+    padding: 8px 15px;
+    border-radius: 8px;
+    color: #8D4925 !important;
+    font-weight: bold;
+}
+
+/* ===== HERO ===== */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 55vh;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    color: white;
+    text-shadow: 0 0 10px #000;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin: 0;
+    font-family: 'Marcellus', serif;
+}
+
+.hero-text p {
+    font-size: 22px;
+}
+
+/* ===== BIENVENIDA ===== */
+.bienvenida {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.bienvenida h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 48px;
+    color: #8D4925;
+}
+
+.bienvenida p {
+    font-size: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* ===== SERVICIOS PORTADA ===== */
+.servicios-home {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+
+.servicio {
+    text-align: center;
+    max-width: 300px;
+}
+
+.servicio img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.servicio h3 {
+    color: #8D4925;
+    margin-top: 15px;
+}
+
+.button {
+    display: inline-block;
+    background: #8D4925;
+    color: white;
+    padding: 8px 18px;
+    margin-top: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: #FFB48A;
+    color: #8D4925;
+}
+
+/* ===== VIDEO ===== */
+.video {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* ===== MAPA ===== */
+.mapa {
+    padding: 40px 20px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #8D4925;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+footer h3 {
+    font-size: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer a {
+    color: #FFB48A;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
 
